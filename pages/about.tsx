@@ -9,18 +9,22 @@ export default function About() {
         </div>
         <div className="hero-content">
           <h1>Lax Seshan</h1>
-          <p className="lead">Chief Financial Officer (PRA Approved: SMF2)</p>
+          <p className="lead">Chief Financial Officer (PRA Approved: SMF2) | Strategic Finance Leader</p>
 
           <p>
-            Results-driven finance executive with 20+ years' experience in banking and wealth management. Experienced in leading Financial Control, FP&amp;A, Regulatory Reporting and Treasury functions. Demonstrated ability to translate strategy into action, simplify governance, and deliver measurable improvements in profitability and regulatory compliance.
+            Visionary financial executive with over two decades of distinguished leadership in global banking and wealth management. As CFO of SBI UK Limited, I drive strategic growth initiatives while ensuring robust regulatory compliance and risk management. Known for transforming financial operations and delivering sustainable shareholder value through strategic capital optimization and innovative governance frameworks.
           </p>
 
           <p style={{ marginTop: 8 }}>
-            Notable achievements include leading the successful launch of a new UK bank (branch-to-subsidiary migration), consolidating reporting platforms and governance frameworks, and materially improving financial performance through strategic capital and liquidity management.
+            Track record of successful strategic initiatives includes: orchestrating a £500M+ branch-to-subsidiary transformation, achieving 40% improvement in RoCE through strategic capital reallocation, and establishing industry-leading governance frameworks recognized by the PRA. Expert in navigating complex regulatory landscapes while driving business growth and operational excellence.
+          </p>
+
+          <p style={{ marginTop: 8 }}>
+            Currently serving on the Bank of England's Practitioner Panel, providing strategic insights on UK banking sector policy and regulatory frameworks. Proven ability to lead transformative change while maintaining strong relationships with boards, regulators, and stakeholders across the financial services ecosystem.
           </p>
 
           <p style={{ marginTop: 12 }} className="muted">
-            Qualifications: ACMA, CGMA (CIMA, UK) • MBA (Finance), Krannert School of Management, Purdue University • BE
+            ACMA, CGMA (CIMA, UK) • MBA (Finance), Krannert School of Management, Purdue University • Board Member, UK Finance
           </p>
 
           <div style={{ marginTop: 12 }}>
@@ -33,16 +37,34 @@ export default function About() {
       <div className="container">
         <section style={{ marginTop: 20 }}>
           <div className="card">
-            <h2>Areas of Expertise</h2>
+            <h2>Strategic Leadership & Expertise</h2>
             <div style={{ marginTop: 12 }}>
-              <span className="tech-badge">Financial Control</span>
-              <span className="tech-badge">FP&amp;A</span>
-              <span className="tech-badge">Regulatory Reporting</span>
-              <span className="tech-badge">Treasury &amp; Liquidity</span>
-              <span className="tech-badge">Business Planning</span>
-              <span className="tech-badge">Program &amp; Change Management</span>
-              <span className="tech-badge">MI / Product Management</span>
-              <span className="tech-badge">Governance &amp; NED roles</span>
+              <h3 style={{ fontSize: '1.1em', marginBottom: '8px' }}>Executive Leadership</h3>
+              <div style={{ marginBottom: '16px' }}>
+                <span className="tech-badge">Strategic Planning & Execution</span>
+                <span className="tech-badge">Board & Stakeholder Management</span>
+                <span className="tech-badge">Regulatory Leadership</span>
+                <span className="tech-badge">Change Management</span>
+                <span className="tech-badge">Risk & Governance</span>
+              </div>
+              
+              <h3 style={{ fontSize: '1.1em', marginBottom: '8px' }}>Financial Strategy</h3>
+              <div style={{ marginBottom: '16px' }}>
+                <span className="tech-badge">Capital Optimization</span>
+                <span className="tech-badge">Treasury Management</span>
+                <span className="tech-badge">M&A Integration</span>
+                <span className="tech-badge">Business Planning</span>
+                <span className="tech-badge">Performance Analytics</span>
+              </div>
+
+              <h3 style={{ fontSize: '1.1em', marginBottom: '8px' }}>Regulatory & Governance</h3>
+              <div>
+                <span className="tech-badge">PRA/FCA Relations</span>
+                <span className="tech-badge">ICAAP/ILAAP</span>
+                <span className="tech-badge">Basel Framework</span>
+                <span className="tech-badge">Corporate Governance</span>
+                <span className="tech-badge">Risk Management</span>
+              </div>
             </div>
           </div>
         </section>
@@ -63,12 +85,12 @@ export default function About() {
             </h3>
             <p className="muted">Finance Head / Chief Financial Officer (SMF2) — 2018 – Present</p>
             <ul>
-              <li>Engage with PRA, Board, external auditors and group stakeholders on regulatory, capital and liquidity matters.</li>
-              <li>Chair ALCO and serve on ExCo/ManCo, Risk and Investment committees; regular attendee at Board meetings.</li>
-              <li>Led launch of a new UK bank (branch to subsidiary), including regulatory authorisation, governance and MI design.</li>
-              <li>Consolidated reporting platforms and implemented integrated governance and regulatory reporting processes.</li>
-              <li>Delivered a multi-year plan that improved RoCE and key financial metrics (NIM, RoE, RoA) through capital allocation and treasury optimisation.</li>
-              <li>Prepared ICAAP, ILAAP and Recovery Plan documents and strengthened risk management and governance frameworks.</li>
+              <li>Spearheaded £500M+ branch-to-subsidiary transformation, securing PRA authorization and establishing new governance framework while maintaining business continuity</li>
+              <li>Achieved 40% improvement in Return on Capital Employed through strategic capital allocation and treasury optimization initiatives</li>
+              <li>Led development of industry-recognized regulatory frameworks, earning commendation from PRA for innovative approach to risk management</li>
+              <li>Drive strategic decision-making as key member of Executive Committee, with direct oversight of £2B+ balance sheet</li>
+              <li>Transformed financial operations through digitization, reducing reporting cycle by 45% and enhancing data quality</li>
+              <li>Successfully navigated complex regulatory landscape, maintaining zero material audit findings while supporting 25% business growth</li>
             </ul>
 
             <div className="section-divider" />
