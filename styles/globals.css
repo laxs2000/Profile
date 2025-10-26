@@ -27,6 +27,34 @@ body{
   text-decoration:none;
   font-weight:600;
 }
+.header-inner{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:16px;
+}
+.brand{ display:flex; flex-direction:column; }
+.brand-link{ font-weight:700; color:var(--accent); text-decoration:none; }
+.brand-sub{ font-size:12px; color:var(--muted); }
+.nav-link{ color:var(--muted); padding:8px 10px; border-radius:6px; text-decoration:none; }
+.nav-link:hover{ background:#f1f5f9; color:var(--accent); }
+.nav-link.active{ background:linear-gradient(90deg, rgba(5,99,175,0.08), rgba(5,99,175,0.03)); color:var(--accent); }
+.socials{ display:flex; align-items:center; gap:8px; }
+.social-link{ color:var(--muted); display:inline-flex; align-items:center; }
+.social-link svg{ display:block; }
+
+/* Hero and profile styles */
+.hero{ display:flex; gap:20px; align-items:center; margin:24px 0; }
+.profile-avatar{ width:120px; height:120px; border-radius:9999px; background:linear-gradient(135deg,#e6f0fb,#fff); display:flex; align-items:center; justify-content:center; font-weight:700; color:var(--accent); font-size:36px; border:2px solid rgba(5,99,175,0.06); }
+.hero-content h1{ margin:0 0 8px 0; font-size:28px; }
+.hero-content p.lead{ margin:0 0 12px 0; color:var(--muted); }
+
+/* Cards and project grid */
+.card{ background:var(--card); padding:20px; border-radius:10px; box-shadow:0 6px 18px rgba(20,20,40,0.04); }
+.projects-grid{ display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:18px; }
+.project-card{ background:var(--card); padding:16px; border-radius:10px; border:1px solid #eef2f6; }
+.project-card h3{ margin:0 0 8px 0; }
+.tech-badge{ display:inline-block; background:#f6f8fa; padding:6px 8px; border-radius:6px; font-size:13px; margin-right:6px; margin-bottom:6px; }
 .container{
   max-width:900px;
   margin:28px auto;
@@ -44,3 +72,8 @@ label{ display:flex; flex-direction:column; font-weight:600; }
 input, textarea{ padding:8px; border-radius:6px; border:1px solid #ddd; margin-top:6px; }
 button{ background:var(--accent); color:#fff; border:none; padding:10px 14px; border-radius:6px; cursor:pointer; }
 .site-footer{ text-align:center; padding:20px 0; color:var(--muted); }
+
+/* Utility */
+.muted{ color:var(--muted); }
+.container{ max-width:960px; margin:0 auto; padding:20px; }
+.content{ padding-top:18px; }
