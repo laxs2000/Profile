@@ -3,7 +3,7 @@ import Layout from '../components/Layout';
 export default function About() {
   return (
     <Layout>
-      <section className="card hero">
+      <section className="hero-card">
         <div className="profile-avatar" aria-hidden>
           L
         </div>
@@ -12,7 +12,7 @@ export default function About() {
           <p className="lead">Chief Financial Officer (PRA Approved: SMF2)</p>
 
           <p>
-            Results-driven finance executive with 20+ years’ experience in banking and wealth management. Experienced in leading Financial Control, FP&A, Regulatory Reporting and Treasury functions. Demonstrated ability to translate strategy into action, simplify governance, and deliver measurable improvements in profitability and regulatory compliance.
+            Results-driven finance executive with 20+ years’ experience in banking and wealth management. Experienced in leading Financial Control, FP&amp;A, Regulatory Reporting and Treasury functions. Demonstrated ability to translate strategy into action, simplify governance, and deliver measurable improvements in profitability and regulatory compliance.
           </p>
 
           <p style={{ marginTop: 8 }}>
@@ -23,9 +23,10 @@ export default function About() {
             Qualifications: ACMA, CGMA (CIMA, UK) • MBA (Finance), Krannert School of Management, Purdue University • BE
           </p>
 
-          <p style={{ marginTop: 12 }}>
-            <a href="/resume.docx" className="nav-link" download>Download resume</a>
-          </p>
+          <div style={{ marginTop: 12 }}>
+            <a href="/resume.docx" className="btn-primary" download>Download resume</a>
+            <a href="/contact" className="btn-ghost">Contact</a>
+          </div>
         </div>
       </section>
 
