@@ -7,6 +7,7 @@
   --hero-gradient-start: #e6f0fb;
   --hero-gradient-end: #ffffff;
   --badge-bg: #eef6ff;
+  --brand:#0b5fff; /* easy-to-change brand color */
 }
 html,body,#root{
   height:100%;
@@ -73,6 +74,20 @@ body{
 
 /* Colorful badges */
 .tech-badge{ display:inline-block; padding:8px 10px; border-radius:999px; font-size:13px; margin-right:8px; margin-bottom:8px; background:var(--badge-bg); color:var(--accent); font-weight:600; }
+
+/* badge hover animation */
+.tech-badge{ transition: transform 200ms ease, box-shadow 200ms ease, background 200ms ease; }
+.tech-badge:hover{ transform: translateY(-6px) scale(1.03); box-shadow:0 12px 30px rgba(11,95,255,0.12); background: linear-gradient(90deg, rgba(11,95,255,0.06), rgba(14,165,164,0.02)); color:var(--brand); }
+
+/* Experience icons and layout */
+.experience-heading{
+  display:flex; align-items:center; gap:10px; color:var(--brand); font-weight:700;
+}
+.experience-heading .icon{ width:18px; height:18px; display:inline-flex; align-items:center; justify-content:center; flex:0 0 18px; }
+.experience-heading .icon svg{ width:18px; height:18px; fill:var(--brand); opacity:0.9; }
+
+/* small subtle divider */
+.section-divider{ height:1px; background:linear-gradient(90deg, transparent, rgba(0,0,0,0.04), transparent); margin:18px 0; border-radius:2px; }
 
 /* Experience list styling */
 .experience h3{ margin:0 0 6px 0; }
