@@ -7,7 +7,12 @@
   --hero-gradient-start: #e6f0fb;
   --hero-gradient-end: #ffffff;
   --badge-bg: #eef6ff;
-  --brand:#0b5fff; /* easy-to-change brand color */
+  --brand:#0b5fff;
+  --executive-accent: #14417c;
+  --executive-muted: #4a5568;
+  --executive-bg: #f8fafc;
+  --executive-gradient-start: #1a365d;
+  --executive-gradient-end: #2c5282;
 }
 html,body,#root{
   height:100%;
@@ -56,12 +61,15 @@ body{
 
 /* Hero card with color accent */
 .hero-card{
-  background: linear-gradient(180deg, rgba(5,99,175,0.08) 0%, rgba(14,165,164,0.03) 100%);
-  border-radius:12px;
-  padding:22px;
+  background: linear-gradient(165deg, var(--executive-bg) 0%, #ffffff 100%);
+  border-radius:16px;
+  padding:40px;
   display:flex;
-  gap:20px;
+  gap:32px;
   align-items:center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  border: 1px solid rgba(0,0,0,0.05);
+  margin-bottom: 32px;
 }
 .hero-card .profile-avatar{ width:140px; height:140px; font-size:42px; box-shadow:0 8px 24px rgba(5,99,175,0.08); }
 .hero-card .hero-content h1{ font-size:32px; margin-bottom:6px; }
@@ -73,7 +81,19 @@ body{
 .section-title{ font-size:20px; margin:0 0 8px 0; }
 
 /* Colorful badges */
-.tech-badge{ display:inline-block; padding:8px 10px; border-radius:999px; font-size:13px; margin-right:8px; margin-bottom:8px; background:var(--badge-bg); color:var(--accent); font-weight:600; }
+.tech-badge{ 
+  display:inline-block; 
+  padding:10px 16px; 
+  border-radius:8px; 
+  font-size:14px; 
+  margin-right:10px; 
+  margin-bottom:10px; 
+  background:var(--badge-bg); 
+  color:var(--executive-accent); 
+  font-weight:600;
+  letter-spacing: 0.2px;
+  border: 1px solid rgba(20,65,124,0.08);
+}
 
 /* badge hover animation */
 .tech-badge{ transition: transform 200ms ease, box-shadow 200ms ease, background 200ms ease; }
@@ -81,10 +101,43 @@ body{
 
 /* Experience icons and layout */
 .experience-heading{
-  display:flex; align-items:center; gap:10px; color:var(--brand); font-weight:700;
+  display:flex;
+  align-items:center;
+  gap:12px;
+  color:var(--executive-accent);
+  font-weight:700;
+  transform: translateX(0);
+  transition: transform 0.3s ease;
 }
-.experience-heading .icon{ width:18px; height:18px; display:inline-flex; align-items:center; justify-content:center; flex:0 0 18px; }
-.experience-heading .icon svg{ width:18px; height:18px; fill:var(--brand); opacity:0.9; }
+
+.experience-heading:hover {
+  transform: translateX(8px);
+}
+
+.experience-heading .icon{
+  width:24px;
+  height:24px;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  flex:0 0 24px;
+  background: linear-gradient(135deg, var(--executive-gradient-start), var(--executive-gradient-end));
+  border-radius: 6px;
+  padding: 5px;
+  transition: all 0.3s ease;
+}
+
+.experience-heading:hover .icon {
+  transform: scale(1.1);
+  box-shadow: 0 4px 12px rgba(26,54,93,0.2);
+}
+
+.experience-heading .icon svg{
+  width:20px;
+  height:20px;
+  fill:#ffffff;
+  opacity:1;
+}
 
 /* small subtle divider */
 .section-divider{ height:1px; background:linear-gradient(90deg, transparent, rgba(0,0,0,0.04), transparent); margin:18px 0; border-radius:2px; }

@@ -1,0 +1,132 @@
+/* Executive styling enhancements */
+.hero-content h1 {
+  font-size: 36px !important;
+  letter-spacing: -0.5px;
+  margin-bottom: 12px !important;
+  background: linear-gradient(to right, var(--executive-gradient-start), var(--executive-gradient-end));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.hero-content .lead {
+  font-size: 20px;
+  color: var(--executive-accent);
+  margin-bottom: 24px !important;
+  line-height: 1.4;
+}
+
+.hero-content p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--executive-muted);
+  margin-bottom: 16px;
+}
+
+.card {
+  padding: 32px !important;
+  border-radius: 12px !important;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.04) !important;
+  border: 1px solid rgba(0,0,0,0.05);
+  margin-bottom: 24px;
+}
+
+.card h2 {
+  font-size: 24px;
+  color: var(--executive-accent);
+  margin-bottom: 24px;
+  position: relative;
+  padding-bottom: 12px;
+}
+
+.card h2::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(to right, var(--executive-gradient-start), var(--executive-gradient-end));
+  border-radius: 2px;
+}
+
+.card h3 {
+  color: var(--executive-accent);
+  font-size: 18px;
+  margin-bottom: 16px;
+  font-weight: 600;
+}
+
+.experience-heading {
+  font-size: 20px !important;
+  margin-bottom: 8px !important;
+}
+
+.section-divider {
+  margin: 28px 0 !important;
+  opacity: 0.8;
+}
+
+ul {
+  padding-left: 24px;
+}
+
+ul li {
+  margin-bottom: 12px;
+  line-height: 1.6;
+  color: var(--executive-muted);
+}
+
+.muted {
+  color: var(--executive-muted);
+  font-size: 15px;
+}
+
+/* Enhanced buttons */
+.btn-primary {
+  background: linear-gradient(to right, var(--executive-gradient-start), var(--executive-gradient-end));
+  padding: 12px 24px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  transition: all 0.3s ease;
+  border: none;
+  box-shadow: 0 4px 12px rgba(26,54,93,0.15);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(26,54,93,0.2);
+}
+
+.btn-ghost {
+  border: 2px solid var(--executive-accent);
+  color: var(--executive-accent);
+  padding: 12px 24px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  transition: all 0.3s ease;
+}
+
+.btn-ghost:hover {
+  background: var(--executive-accent);
+  color: white;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .hero-card {
+    padding: 24px;
+  }
+  
+  .hero-content h1 {
+    font-size: 28px !important;
+  }
+  
+  .hero-content .lead {
+    font-size: 18px;
+  }
+  
+  .card {
+    padding: 24px !important;
+  }
+}
