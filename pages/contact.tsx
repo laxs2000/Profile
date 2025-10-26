@@ -9,7 +9,7 @@ export default function Contact() {
     e.preventDefault();
     const subject = encodeURIComponent(`Website contact from ${name || 'visitor'}`);
     const body = encodeURIComponent(message || '');
-    window.location.href = `mailto:hello@example.com?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:Lax2000@gmail.com?subject=${subject}&body=${body}`;
   }
 
   return (
